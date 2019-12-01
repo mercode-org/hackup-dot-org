@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="tr">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<head>
+  <title>HackUP</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<header>
+  <div class="header">
+    <div class="headerdiv">
+      <a href="index.html"><img src="resimler/logo.svg" class="logo" alt="SulinOS Linux Distro"></a>
+    </div>
+    <div class="headerbuttondiv">
+      <a href="#underdevelopment" class="headerbutton">Blog</a>
+      <a href="#underdevelopment" class="headerbutton">Register</a>
+      <a href="#underdevelopment" class="headerbutton">IMI</a>
+    </div>
+  </div>
+</header>
+
+<body>
+  <div class="hero">
+    <p class="bigyazi" id="bigyazi1">printf "<span id=ityped></span>";</p>
+    <p class="miniyazi">function Welcometo(HackUp) {
+      <br/><span id="ityped2"></span>
+      <br/>};
+    </p>
+    <br/>
+    <div class="dalga"></div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".menu-icon").on("click", function() {
+        $("nav ul").toggleClass("showing");
+      });
+    });
+
+
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      } else {
+        $('nav').removeClass('black');
+      }
+    })
+  </script>
+
+  <script type="text/javascript" src="ityped.js"></script>
+  <script type="text/javascript">
+     window.ityped.init(document.querySelector('#ityped'),{
+         loop:       false,
+         cursorChar: "_",
+         strings : ['Welcome to HackUP!']
+
+  })
+    window.ityped.init(document.querySelector('#ityped2'),{
+        loop:       false,
+        showCursor: false,
+        startDelay: 1700,
+        typeSpeed:  70,
+        strings : ['HackUP is an IT club and Hackerspace formed by High School and University students worldwide. It is currently present in IMI High School.']
+
+  })
+  </script>
+         <!--strings : ['HackUP is an IT club formed by High School and University students worldwide. It is currently present in IMI High School.']-->
+</body>
+
+<footer>
+  <div class="footer-sosyal-ikon">
+    <ul>
+      <li><a href="https://github.com/hackup-org"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.twitch.tv/hackuporg"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+      <li><a href="https://t.me/hackuporg"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</footer>
+</html>
