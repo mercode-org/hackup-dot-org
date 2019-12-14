@@ -1,6 +1,6 @@
 html {
   padding-top: 0;
-  font-family: sans-serif;
+  font-family: 'pixelfont';
   background-color: black;
 }
 body {
@@ -80,6 +80,18 @@ h1 {
   max-width: 500px;
   height: auto;
 }
+.bigyazi {
+  color: #00c853;
+  font-size: 45px;
+}
+#ityped{
+  color: black;
+  background: #00c853;
+}
+.miniyazi {
+  color: #00c853;
+  font-size: 26px;
+}
 a.button {
     float: left;
     border-color: white;
@@ -120,8 +132,20 @@ a.button:hover {
     margin-left: auto;
     margin-right: auto;
   }
+  .bigyazi {
+    font-size: 30px;
+  }
+  .miniyazi {
+    font-size: 20px;
+  }
 }
-
+@media (max-width: 420px)
+{
+  .logo {
+    width:100%;
+    height:auto;
+  }
+}
 /*Fooooooooooooooooooooooooooooter*/
 footer {
     position: fixed;
@@ -153,4 +177,32 @@ footer {
 .footer-sosyal-ikon ul li a{
   font-size: 27px;
   color: black;
+}
+
+.ityped-cursor {
+  font-size: 3.2rem;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+/******************Ityped Blink*******************/
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  100% {
+    opacity: 0;
+  }
 }
